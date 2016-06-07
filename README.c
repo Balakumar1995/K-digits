@@ -17,6 +17,9 @@ for(i=0;i<l;i++)
 	arr[i]=(int)str[i]%48;
 qsort(arr,l,sizeof(long long int), cumfun);
 for(i=0;i<l-k;i++)
+{
+if(arr[i]!=0)
 printf("%lld",arr[i]);
+}
 return 0;
 }
