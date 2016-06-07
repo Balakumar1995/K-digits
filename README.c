@@ -6,7 +6,7 @@ long long int cumfun(const void * a, const void * b)
    return ( *(long long int*)a - *(long long int*)b );
 }
 
-void main()
+main()
 {
 long long int arr[1000],number,i,k,l;
 char str[10000];
@@ -18,4 +18,5 @@ for(i=0;i<l;i++)
 qsort(arr,l,sizeof(long long int), cumfun);
 for(i=0;i<l-k;i++)
 printf("%lld",arr[i]);
+return 0;
 }
